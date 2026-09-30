@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokoPremiumMurah - Layanan Langganan Akun Premium Terpercaya</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f5ff',
+                            100: '#e0ebff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 transition-colors duration-300 min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 w-full glass border-b border-slate-800/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-400 flex items-center justify-center shadow-lg shadow-brand-500/30">
+                        <i data-lucide="zap" class="w-6 h-6 text-white fill-current"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-brand-500 bg-clip-text text-transparent">
+                        TokoPremiumMurah
+                    </span>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#produk" class="text-slate-300 hover:text-brand-500 transition-colors">Layanan Premium</a>
+                    <a href="#cek-transaksi" class="text-slate-300 hover:text-brand-500 transition-colors">Cek Pesanan</a>
+                    <a href="#testimoni" class="text-slate-300 hover:text-brand-500 transition-colors">Testimoni</a>
+                    <a href="#faq" class="text-slate-300 hover:text-brand-500 transition-colors">FAQ</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="flex items-center space-x-3">
+                    <a href="https://wa.me/6283866745078" target="_blank" class="inline-flex items-center px-4 py-2 text-xs font-semibold rounded-xl bg-brand-600 hover:bg-brand-500 text-white shadow-lg shadow-brand-600/30 transition-all">
+                        <i data-lucide="message-square" class="w-3.5 h-3.5 mr-2"></i> CS Bantuan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative overflow-hidden pt-8 pb-16 md:pt-16 md:pb-24">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold">
+                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                        <span>Garansi Full & Layanan Legal 100%</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                        Langganan Akun <span class="bg-gradient-to-r from-red-500 via-indigo-400 to-purple-500 bg-clip-text text-transparent">Premium Digital</span> Murah & Cepat
+                    </h1>
+                    <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto md:mx-0">
+                        Akses YouTube Premium, Netflix, Disney+, Viu, Canva Pro, dan puluhan aplikasi favorit tanpa iklan dengan harga super terjangkau.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                        <a href="#produk" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-bold text-sm shadow-xl shadow-brand-600/25 transition-all text-center flex items-center justify-center">
+                            <i data-lucide="shopping-bag" class="w-4 h-4 mr-2"></i> Pilih Paket Pemesanan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Promo Card -->
+                <div class="relative">
+                    <div class="relative rounded-3xl p-6 glass border border-slate-800/80 shadow-2xl overflow-hidden">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 rounded-lg bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-bold uppercase tracking-wider">
+                                PROMO SPESIAL
+                            </span>
+                            <div class="text-xs text-slate-400 flex items-center">
+                                <i data-lucide="flame" class="w-4 h-4 text-amber-500 mr-1"></i> Terlaris
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-16 h-16 rounded-2xl bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-500 shrink-0">
+                                <i data-lucide="youtube" class="w-10 h-10"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">YouTube Premium (1 Bulan)</h3>
+                                <p class="text-xs text-slate-400">Bebas iklan, Play Background & YouTube Music</p>
+                                <div class="mt-2 flex items-baseline space-x-2">
+                                    <span class="text-2xl font-black text-emerald-400">Rp 12.000</span>
+                                    <span class="text-xs text-slate-500 line-through">Rp 59.000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="orderViaWA('YouTube Premium (1 Bulan) - Rp 12.000')" class="w-full py-3 rounded-xl bg-gradient-to-r from-red-600 to-red-500 text-white font-bold text-sm transition-all shadow-lg flex items-center justify-center">
+                            Pesan YouTube Premium Sekarang <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="produk" class="py-12 bg-slate-900/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8 text-center md:text-left">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Daftar Layanan Premium</h2>
+                <p class="text-slate-400 text-sm mt-1">Pilih aplikasi favoritmu dan hubungi admin langsung untuk proses kilat</p>
+            </div>
+
+            <!-- Product Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Product 1: YouTube -->
+                <div class="glass p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-red-500/20 text-red-500 flex items-center justify-center mb-4">
+                            <i data-lucide="youtube" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">YouTube Premium</h3>
+                        <p class="text-xs text-slate-400 mt-1">Tanpa Iklan, Bebas Putar di Background, Termasuk YouTube Music.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-slate-400">Mulai dari</span>
+                            <div class="text-xl font-extrabold text-emerald-400">Rp 12.000 / bln</div>
+                        </div>
+                    </div>
+                    <button onclick="orderViaWA('YouTube Premium')" class="mt-6 w-full py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs transition-all">Pesan Sekarang</button>
+                </div>
+
+                <!-- Product 2: Netflix -->
+                <div class="glass p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-red-600/20 text-red-600 flex items-center justify-center mb-4">
+                            <i data-lucide="tv" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Netflix Premium</h3>
+                        <p class="text-xs text-slate-400 mt-1">Kualitas 4K Ultra HD, Private/Shared Profile, Bebas Nonton Film Sepuasnya.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-slate-400">Mulai dari</span>
+                            <div class="text-xl font-extrabold text-emerald-400">Rp 35.000 / bln</div>
+                        </div>
+                    </div>
+                    <button onclick="orderViaWA('Netflix Premium')" class="mt-6 w-full py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs transition-all">Pesan Sekarang</button>
+                </div>
+
+                <!-- Product 3: Canva Pro -->
+                <div class="glass p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center mb-4">
+                            <i data-lucide="palette" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Canva Pro</h3>
+                        <p class="text-xs text-slate-400 mt-1">Buka Semua Elemen Premium, Font, Template, & Brand Kit tanpa batas.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-slate-400">Mulai dari</span>
+                            <div class="text-xl font-extrabold text-emerald-400">Rp 15.000 / thn</div>
+                        </div>
+                    </div>
+                    <button onclick="orderViaWA('Canva Pro')" class="mt-6 w-full py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs transition-all">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Pertanyaan Umum (FAQ)</h2>
+                <p class="text-slate-400 text-sm mt-1">Jawaban cepat untuk pertanyaan yang sering ditanyakan</p>
+            </div>
+
+            <div class="space-y-4">
+                <details class="glass rounded-2xl p-4 border border-slate-800 group cursor-pointer">
+                    <summary class="font-bold text-white text-sm flex justify-between items-center list-none">
+                        <span>Berapa lama proses pengerjaan / pengaktifan akun?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 group-open:rotate-180 transition-transform text-slate-400"></i>
+                    </summary>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-3 leading-relaxed">
+                        Proses pengaktifan rata-rata membutuhkan waktu **1 - 10 menit** setelah pembayaran terkonfirmasi oleh admin kami.
+                    </p>
+                </details>
+
+                <details class="glass rounded-2xl p-4 border border-slate-800 group cursor-pointer">
+                    <summary class="font-bold text-white text-sm flex justify-between items-center list-none">
+                        <span>Apakah layanan di TokoPremiumMurah bergaransi?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 group-open:rotate-180 transition-transform text-slate-400"></i>
+                    </summary>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-3 leading-relaxed">
+                        **Ya, Full Garansi!** Jika terjadi kendala pada akun dalam masa langganan, CS kami akan siap membantu perbaikan atau mengganti dengan akun baru secara gratis.
+                    </p>
+                </details>
+
+                <details class="glass rounded-2xl p-4 border border-slate-800 group cursor-pointer">
+                    <summary class="font-bold text-white text-sm flex justify-between items-center list-none">
+                        <span>Bagaimana cara melakukan pembayaran?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 group-open:rotate-180 transition-transform text-slate-400"></i>
+                    </summary>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-3 leading-relaxed">
+                        Kami menerima pembayaran via **QRIS (All E-Wallet & Bank)**, Transfer Bank (BCA, Mandiri, BRI), serta saldo Dana, GoPay, OVO, & ShopeePay.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto border-t border-slate-800 bg-slate-950 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500">
+            <p>&copy; 2026 TokoPremiumMurah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT INTEGRATION -->
+    <script>
+        // Inisialisasi Ikon Lucide
+        lucide.createIcons();
+
+        // Fungsi Pemesanan Otomatis ke WhatsApp Admin (0838-6674-5078)
+        function orderViaWA(namaProduk) {
+            const adminWA = "6283866745078";
+            const pesan = `Halo Admin TokoPremiumMurah, saya ingin memesan layanan *${namaProduk}*. Mohon informasi total harga dan pilihan metode pembayarannya. Terima kasih!`;
+            const urlWA = `https://wa.me/${adminWA}?text=${encodeURIComponent(pesan)}`;
+            window.open(urlWA, '_blank');
+        }
+    </script>
+</body>
+</html>
